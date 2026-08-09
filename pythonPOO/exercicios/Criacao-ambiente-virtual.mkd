@@ -1,0 +1,38 @@
+No VS Code: 
+Você cria pelo terminal (python -m venv .venv) ou pelo comando da extensão.
+
+2. Comando de ativação
+Digite o comando abaixo de acordo com o nome que você deu para a pasta do seu ambiente:
+Se a sua pasta se chama .venv (padrão mais comum):
+
+Bash
+source .venv/bin/activate
+Se a sua pasta se chama venv:
+
+Bash
+source venv/bin/activate
+Como saber se deu certo?
+
+Assim que você executa o comando, o terminal do Mint vai mudar o cabeçalho e exibir o nome do ambiente entre parênteses no início da linha, assim:
+
+Bash
+(.venv) usuario@seu-mint:~/seu-projeto$
+
+Enquanto o (.venv) estiver aparecendo, qualquer biblioteca instalada via pip install ficará isolada nesse projeto sem afetar o sistema operacional.
+
+Dica de Praticidade
+Para desativar o ambiente quando terminar de estudar, basta digitar:
+
+Bash
+deactivate
+___________________________________________
+TODO Tree  
+O que faz: Procura por comentários como # TODO: ou # FIXME: espalhados no seu código e organiza todos eles em uma aba no painel lateral.
+
+Por que usar: Ideal para quando você está estudando e quer deixar anotações de coisas para revisar ou exercitar mais tarde no projeto.
+
+Better Comments  
+O que faz: Categoriza seus comentários em cores com base no caractere inicial 
+(ex: # ! para alertas, # ? para dúvidas, # TODO para tarefas).  
+
+Por que usar: Torna suas anotações de estudo no próprio arquivo de código muito mais fáceis de revisar.  
