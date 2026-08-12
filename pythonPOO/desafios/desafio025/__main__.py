@@ -1,11 +1,24 @@
 from transporte import *
+from rich import print, inspect
+from rich.table import Table
 
 def main():
-    dist = 10
+    dist = 80
 
-    frete = Drone(dist)
+    """entrega = Drone(dist)
+    print(f"Frete de {type(entrega).__name__} em {dist}km = {entrega.calc_frete()}")"""
 
-    print(f"O frete de {type(frete).__name__} vai custa = R${frete.calc_frete()}")
+    viagem = [Moto(dist), Caminhao(dist), Drone(dist)]
+
+    tabela = Table(title="Tabela de Fretes")
+    tabela.add_column("Distância")
+    tabela.add_column("Tipo")
+    tabela.add_column("Frete")
+
+    for item in viagem:
+        tabela.add_row(f"{dist}Km", f"{type(item).__name__}", f"{item.calc_frete()}")
+
+    print(tabela)
 
 if __name__ == "__main__":
     main()
