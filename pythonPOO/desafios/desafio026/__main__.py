@@ -1,5 +1,4 @@
 from funcinarios import *
-from rich import print, inspect
 
 
 def main():
